@@ -1,13 +1,14 @@
-Arabic Question Answering App using AraBERT
-
-
-
+### Arabic Question Answering App using AraBERT:
+ <br/> 
+ 
+  <br/> 
 This project provides an interactive Arabic Question Answering (QA) web application built with Streamlit and powered by AraBERT, a transformer-based language model fine-tuned on Arabic QA datasets such as the Arabic Reading Comprehension Dataset (ARCD).
 
 The application allows users to input an Arabic context and a question, and returns the most relevant answer extracted from the context.
+<br/>
 
-
-Features:
+### **Features**:
+  <br/> 
 
 ⦁	Supports Arabic input and output.
 
@@ -19,8 +20,10 @@ Features:
 
 ⦁	Can be executed locally once the model is downloaded.
 
+  <br/> 
 
-Technology Stack:
+### **Technology Stack**:
+  <br/> 
 
 Python 3.10 or higher
 
@@ -34,9 +37,11 @@ AraBERT model (aubmindlab/bert-base-arabertv2)
 
 Accelerate (for GPU/CPU optimization)
 
+  <br/> 
 
 
-Installation:
+### **Installation**:
+  <br/> 
 
 ```bash
 # Clone the repository
@@ -50,15 +55,17 @@ pip install streamlit transformers torch accelerate
 pip install transformers[torch]
 ```
 
+  <br/> 
 
 
-Usage:
+### **Usage**:
+  <br/> 
 
 Run the Streamlit application:
-
+```bash
 streamlit run app.py
 
-
+```
 Open the provided local URL in your browser. The interface provides:
 
 A text area to enter the context (paragraph)
@@ -85,9 +92,12 @@ Responsive text areas for context and question input.
 Stores previous context, question, answer, and score in Streamlit session state to facilitate regeneration without re-entering the inputs.
 
 
+  <br/> 
 
-Example
+### **Example**:
+  <br/> 
 
+```json
 Context:
 
 تأسست جامعة الدول العربية في القاهرة عام 1945، وتضم دولاً عربية تهدف إلى توثيق العلاقات بينها وتعزيز التعاون المشترك.
@@ -95,15 +105,18 @@ Context:
 Question:
 
 متى تأسست جامعة الدول العربية؟
-
+```
 Output:
-
+```json
 Answer: عام 1945
 
 Confidence Score: 0.98
 
+```
+  <br/> 
 
-Notes
+### **Notes**
+  <br/> 
 
 ⦁	The application will automatically use GPU if available for faster inference.
 
